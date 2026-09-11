@@ -5,22 +5,22 @@
 class ProtonDriveLinuxFs < Formula
   desc "FUSE virtual filesystem for Proton Drive on Linux."
   homepage "https://github.com/khaosdoctor/proton-drive-linux-fs"
-  version "0.24.0"
+  version "0.24.1"
   license "MIT"
 
   depends_on "libfuse" => :build
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/khaosdoctor/proton-drive-linux-fs/releases/download/v0.24.0/proton-drive-linux-fs_0.24.0_linux_amd64.tar.gz"
-    sha256 "d6e2fd29bde9af11fb4487a1cfd9d2ab1b46eaf7e5f0688f8f0aad3f20f4b431"
+    url "https://github.com/khaosdoctor/proton-drive-linux-fs/releases/download/v0.24.1/proton-drive-linux-fs_0.24.1_linux_amd64.tar.gz"
+    sha256 "c8c76bca551b6bd4d42812092a10f8bdef508566a7b150b0de1a05e53560df14"
     define_method(:install) do
       bin.install "proton-drive-fs"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/khaosdoctor/proton-drive-linux-fs/releases/download/v0.24.0/proton-drive-linux-fs_0.24.0_linux_arm64.tar.gz"
-    sha256 "8414a4d8032ae53add7ba0dd40b951168321a46ca54436d88a36f3c33e0dc9e6"
+    url "https://github.com/khaosdoctor/proton-drive-linux-fs/releases/download/v0.24.1/proton-drive-linux-fs_0.24.1_linux_arm64.tar.gz"
+    sha256 "34eaa692c991fbe14e9f1e4ff60a19466bb04d04469d46b72275e6aa3d9551f7"
     define_method(:install) do
       bin.install "proton-drive-fs"
     end
