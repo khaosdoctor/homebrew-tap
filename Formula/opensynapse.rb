@@ -1,21 +1,19 @@
-# Template for khaosdoctor/homebrew-tap. .github/workflows/release.yml fills in
-# the version and checksums on every release and pushes it to the tap.
 class Opensynapse < Formula
   desc "Remap buttons, set DPI and lighting on Razer mice from Linux"
   homepage "https://github.com/khaosdoctor/opensynapse"
-  version "0.2.0"
+  version "0.2.1"
   license "GPL-2.0-or-later"
 
   depends_on :linux
 
   on_intel do
-    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.0/opensynapse-0.2.0-x86_64.tar.gz"
-    sha256 "680de3a0fb79f9d78437f14867f63aa5dc6330cc98c749b0b575739489998114"
+    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.1/opensynapse-0.2.1-x86_64.tar.gz"
+    sha256 "95192ed2a2914b0c941d81b80665491e839c9b754203a0016b6cc25748e6cae9"
   end
 
   on_arm do
-    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.0/opensynapse-0.2.0-aarch64.tar.gz"
-    sha256 "cdf7230bef738c8d2a5fc5bebfa52a4f7b511af1b424aa17291dd6e57a0d4070"
+    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.1/opensynapse-0.2.1-aarch64.tar.gz"
+    sha256 "2cbad5871c53b6246b20c6b70dd3273102910d3eee7e9feb038d21146859b98a"
   end
 
   def install
