@@ -1,19 +1,19 @@
 class Opensynapse < Formula
   desc "Remap buttons, set DPI and lighting on Razer mice from Linux"
   homepage "https://github.com/khaosdoctor/opensynapse"
-  version "0.2.1"
+  version "0.2.2"
   license "GPL-2.0-or-later"
 
   depends_on :linux
 
   on_intel do
-    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.1/opensynapse-0.2.1-x86_64.tar.gz"
-    sha256 "95192ed2a2914b0c941d81b80665491e839c9b754203a0016b6cc25748e6cae9"
+    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.2/opensynapse-0.2.2-x86_64.tar.gz"
+    sha256 "9509b316e5b0780fcae7b93b5decf299ec22e637c8dc16a79826d03f8e6c14bf"
   end
 
   on_arm do
-    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.1/opensynapse-0.2.1-aarch64.tar.gz"
-    sha256 "2cbad5871c53b6246b20c6b70dd3273102910d3eee7e9feb038d21146859b98a"
+    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.2/opensynapse-0.2.2-aarch64.tar.gz"
+    sha256 "dbd1f8a580e7a66b1159920a3a82977aa132a129639c50d801cc5d9ebf5b1de5"
   end
 
   def install
@@ -22,6 +22,9 @@ class Opensynapse < Formula
     (share/"applications").install "assets/opensynapse.desktop"
     (share/"icons/hicolor/scalable/apps").install "assets/icon.svg" => "opensynapse.svg"
     doc.install "README.md", "PROTOCOL.md"
+    bash_completion.install "completions/opensynapse.bash" => "opensynapse"
+    zsh_completion.install "completions/_opensynapse"
+    fish_completion.install "completions/opensynapse.fish"
   end
 
   def caveats
