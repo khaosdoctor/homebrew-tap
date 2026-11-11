@@ -8,12 +8,12 @@ class Opensynapse < Formula
 
   on_intel do
     url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.5/opensynapse-0.2.5-x86_64.tar.gz"
-    sha256 "3c8a7552768d47a54981b633936b222cd31488bf91ebe2a6c490a9edbbc2bad3"
+    sha256 "99c03967227db1cd67992493cb35c31cd1c10149cf433f4bcbb8a35a5f4aebac"
   end
 
   on_arm do
     url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.5/opensynapse-0.2.5-aarch64.tar.gz"
-    sha256 "b08adc45e46b8f1a4103b7beb2368fdabcdaed30c440d13a5c9a762a426d7437"
+    sha256 "a80ac22f303ebabb9a61bea244b9bc492c81168e1575293eb709845e3091f283"
   end
 
   def install
