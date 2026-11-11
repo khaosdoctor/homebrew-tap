@@ -1,19 +1,19 @@
 class Opensynapse < Formula
   desc "Remap buttons, set DPI and lighting on Razer mice from Linux"
   homepage "https://github.com/khaosdoctor/opensynapse"
-  version "0.2.4"
+  version "0.2.5"
   license "GPL-2.0-or-later"
 
   depends_on :linux
 
   on_intel do
-    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.4/opensynapse-0.2.4-x86_64.tar.gz"
-    sha256 "73a07ec48aec6a3ea00b92832d08265cf5055b1a03f69b44e97128d7f38684e9"
+    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.5/opensynapse-0.2.5-x86_64.tar.gz"
+    sha256 "3c8a7552768d47a54981b633936b222cd31488bf91ebe2a6c490a9edbbc2bad3"
   end
 
   on_arm do
-    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.4/opensynapse-0.2.4-aarch64.tar.gz"
-    sha256 "f71d10011de31d35a76141602b1361ca150b1d8522b4deb5dc81fbb02b7cb92c"
+    url "https://github.com/khaosdoctor/opensynapse/releases/download/v0.2.5/opensynapse-0.2.5-aarch64.tar.gz"
+    sha256 "b08adc45e46b8f1a4103b7beb2368fdabcdaed30c440d13a5c9a762a426d7437"
   end
 
   def install
